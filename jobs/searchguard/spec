@@ -1,0 +1,37 @@
+---
+name: searchguard
+
+packages: []
+templates:
+  bin/searchguard_ctl: bin/searchguard_ctl
+  bin/setup_searchguard.erb: bin/setup_searchguard.sh
+  bin/sleeper: bin/sleeper
+  bin/monit_debugger: bin/monit_debugger
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+  config/sg_action_groups.erb: config/sg_action_groups.yml
+  config/sg_config.erb: config/sg_config.yml
+  config/sg_internal_users.erb: config/sg_internal_users.yml
+  config/sg_roles.erb: config/sg_roles.yml
+  config/sg_roles_mapping.erb: config/sg_roles_mapping.yml
+properties:
+  searchguard.sg_config:
+    description: "https://docs.search-guard.com/latest/internal-users-database"
+  searchguard.sg_action_groups:
+    description: "https://docs.search-guard.com/latest/internal-users-database"
+  searchguard.sg_internal_users:
+    description: "https://docs.search-guard.com/latest/internal-users-database"
+  searchguard.sg_roles_mapping:
+    description: "https://docs.search-guard.com/latest/internal-users-database"
+  searchguard.sg_roles:
+    description: "https://docs.search-guard.com/latest/internal-users-database"
+  searchguard.truststore_pwd:
+    description: truststore password used to generate the truststore certificate
+    default: 'Q9R29S6PruPt57CasgzXK'
+  searchguard.keystore_pwd:
+    description: truststore password used to generate the truststore certificate
+    default: 'bUWc3AxTyRA5S8uZmdN5K'
+  searchguard.cluster_name:
+    description: cluster name 
+    default: 'logserach'

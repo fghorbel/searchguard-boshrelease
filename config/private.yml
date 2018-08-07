@@ -1,0 +1,18 @@
+---
+blobstore:
+  options:
+    credentials_source: static
+    json_key: |
+     { 
+       "type": "service_account",
+       "project_id": "misterauto-1328",
+       "private_key_id": "6a3a101bd02266e8f964765058c3a20d8c7ede95",
+       "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDHxmhTNzMyk8fg\njKFeHd4XoSCLkDoXVLDykIbqKMfl9+PYhWnMxCMEFqDlTIBWTQEtullEQdvCyGpa\nwateqypdnjRyVL9r2+ANet3z/RKB6KSWMIb9RndFsuFrxN7ztUutIyKTKAVfN5P6\n7NestRRloVlNeiPYAsnXEalGFiv/A0GcnvkMLmZiSEJM5VlMmQw7ZBhZB6m2OPKI\n6suI8O/RGjF/DW1dN5TSP4XZRAMPpbP6zUD1guBeXPwboJ9J8K07EOV6osziwavd\no19VgKPu5CnnRVO/eZ67a9jwxGmAGmNPEuPsRJLJztoUZGSi4EYK3J2zDKdrmgtN\n5CbWHgkrAgMBAAECggEAK/TH96dpqHNDw3CuANtphqF5W7v8TC3iUTzjspoOgdct\nVvLj+J4fZkLkXA+dHWAMJleeVJp5FD6syBNc9ZOL2tV4jL+A7uaOQekK9Sh17geW\nT0WWLhxXGgrl9qR2ugDmCc51SRPBOtYrxUZfniyptELwN0/smxbh+mR0bmtqes2E\n4f7M1Lj6aA/i3P1DurjqcBcGKRg1/Q8zFJl1yukk2EGxTmX4XwHjo4xhDIwD9r3T\nZ4m8X84jriEbdxN7qgBT6chudYkc9LXFPdciDGbhic2Uwff9cM8iziCTbru+t+4b\nW+I9+ZvyaMTstxKpWa0f/p7zKFNTF3N11Q+od5aNoQKBgQDxkBwfZhNkDL8zFkfF\ndvcX0FNhyR372yOT0oqtDMeYa6GRe/kKM6Bpk1YFEVxc/Pcg6dp32tALnruuXn+Y\nH/dRaXagCYD3i/Z5XkfuoPG52k9UPwST24X8Huk5yclZdwLJuCCsUR5l/dquhhR9\nuI3+egyMDQrrvddQAZBDrBuY9wKBgQDTtvJcUf6enTegj3MrlqITgPtwwTlxQnTh\nGErF2tcK0e7ncu/opgkGphfK5sbCyLnl/AzrcmzklF6YOkWM/wL7fQVIY7fo1clj\nJd/zlu33NJ+nb6SIWDBbk5LbGVxlHT69jsBVXOh2/fVZ2yif5Zcz+IJ94mTyqgXQ\nzkEKuz9YbQKBgQCH4msPdpo907XShRwGhm9k4/mjrkDBpnoS84Ky6dd1dEZE0po7\nFOONwCXJYAS3Ak36I9KTTXFut/IXmmzoJEM5drwWNoJnvkH97/1CzSJtS9MILxLi\nIcDzHGhR66LqQro8wukORet1sCFNv3rTZffqSLm6JrQX/IicJuUCTFSR7QKBgQDO\n7IJYxTMtZ9AUt+AC/EkQ8wHOJKy2DBQcZRe/5bJEOwdbY7UkGBO+UdvzTjd57aH0\nLLOb88yGZJVIB7wuoJgToQ/mvr/jbABXTY9jj2KqON7KUY3oTPmGp+fjCRiLI1hN\nARbu183Fb1W8Kz27ejSccQlpbDrqCk+A0/YyPO0eyQKBgCTwrxDLBVxTdFW9qB3F\nmk2an3XuhyEzmcwhhat5Z729kxPHSYJyLhoWJ7tzketv4wJLMam7z8B/AGLTSLj0\nNuDAKaqTlAOFxBOmzr2eApo3wHo1niuHU4I08KMuGwNZM3wxkvGQSbzfCGy2cI4b\nbMqXdcwqiJOUck4chu75grYl\n-----END PRIVATE KEY-----\n",
+       "client_email": "bosh-user@misterauto-1328.iam.gserviceaccount.com",
+       "client_id": "103946646877281007764",
+       "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+       "token_uri": "https://accounts.google.com/o/oauth2/token",
+       "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+       "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bosh-user%40misterauto-1328.iam.gserviceaccount.com"
+     }
+

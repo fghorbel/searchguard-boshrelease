@@ -1,0 +1,6 @@
+check process searchguard
+  with pidfile /var/vcap/sys/run/searchguard/searchguard.pid
+  start program "/var/vcap/jobs/searchguard/bin/monit_debugger searchguard_ctl '/var/vcap/jobs/searchguard/bin/searchguard_ctl start'"
+  stop program "/var/vcap/jobs/searchguard/bin/monit_debugger searchguard_ctl '/var/vcap/jobs/searchguard/bin/searchguard_ctl stop'"
+  group vcap
+  depends elasticsearch

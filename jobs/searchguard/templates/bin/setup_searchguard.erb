@@ -1,0 +1,31 @@
+#!/bin/bash
+
+cp -f $JOB_DIR/config/sg_action_groups.yml /var/vcap/jobs/elasticsearch/config/searchguard/sg_action_groups.yml
+cp -f $JOB_DIR/config/sg_config.yml /var/vcap/jobs/elasticsearch/config/searchguard/sg_config.yml
+cp -f $JOB_DIR/config/sg_internal_users.yml /var/vcap/jobs/elasticsearch/config/searchguard/sg_internal_users.yml
+cp -f $JOB_DIR/config/sg_roles.yml /var/vcap/jobs/elasticsearch/config/searchguard/sg_roles.yml
+cp -f $JOB_DIR/config/sg_roles_mapping.yml  /var/vcap/jobs/elasticsearch/config/searchguard/sg_roles_mapping.yml
+
+
+if [[ -d /var/vcap/packages/java8 ]]
+then
+   export JAVA_HOME="/var/vcap/packages/java8"
+fi
+
+export TS_PWD=<%= p("searchguard.truststore_pwd")%>
+export KS_PWD=<%= p("searchguard.keystore_pwd")%>
+export CLUSTER_NAME=<%= p("searchguard.cluster_name")%>
+export HOSTNAME=127.0.0.1
+
+echo "Initialization of searchguard ..."
+chmod +x /var/vcap/packages/elasticsearch/plugins/search-guard-6/tools/sgadmin.sh
+/var/vcap/packages/elasticsearch/plugins/search-guard-6/tools/sgadmin.sh \
+-cd /var/vcap/jobs/elasticsearch/config/searchguard \
+-ks /var/vcap/jobs/elasticsearch/config/searchguard/ssl/kirk-keystore.jks \
+-ts /var/vcap/jobs/elasticsearch/config/searchguard/ssl/truststore.jks \
+-cn $CLUSTER_NAME \
+-kspass $KS_PWD \
+-tspass $TS_PWD \
+-h $HOSTNAME \
+-nhnv
+

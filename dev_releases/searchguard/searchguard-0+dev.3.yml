@@ -1,0 +1,13 @@
+name: searchguard
+version: 0+dev.3
+commit_hash: 352b248
+uncommitted_changes: true
+jobs:
+- name: searchguard
+  version: f49f5fadbe5e724601b4d36d39c5b194dfc38ef1
+  fingerprint: f49f5fadbe5e724601b4d36d39c5b194dfc38ef1
+  sha1: f8465dfb0eb2f4e82ec0eee163ec7daaa039d3eb
+license:
+  version: a11dc44d2ff75b964daf257650268340e4c5ba39
+  fingerprint: a11dc44d2ff75b964daf257650268340e4c5ba39
+  sha1: dcc6e946f37e518009b54fe5d7c1a4e239b55df8

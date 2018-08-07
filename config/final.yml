@@ -1,0 +1,6 @@
+---
+blobstore:
+  provider: gcs
+  options:
+    bucket_name: bosh-blobstore-bucket
+final_name: searchguard
